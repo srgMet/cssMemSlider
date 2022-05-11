@@ -1,0 +1,33 @@
+.wraper {
+padding: 30px ;
+display: flex;
+  align-items: center;
+  justify-content: center
+
+}
+.slider {
+
+background-color: black;
+}
+.carousel {
+
+   padding: 30px auto;
+   min-height: 100%;
+}
+.card {
+
+}
+img{
+border-radius: 10px;
+}
+.card-pic {
+
+   margin: 10px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+h4{
+   color: bisque;
+   font-size: 18px;
+}
