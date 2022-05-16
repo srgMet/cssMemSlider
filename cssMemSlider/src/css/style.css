@@ -1,0 +1,136 @@
+#slider {
+   position: relative;
+	top: 10px;
+   background-color: darkslategray;
+}
+
+#slider{
+	margin: 0 auto;
+   padding: 15px 0px 55px 60px;
+}
+
+#slides article{
+	width: 20%;
+   float: left;
+}
+
+#slides .cards, .text{
+	width: 500%;
+	line-height: 0;
+}
+
+h4{
+   font: 1em sans-serif;
+   color: bisque;
+   margin-top: 30px;
+}
+
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{
+
+   width: 90%;
+   border-radius: 10px;
+}
+
+#desktop:checked ~ #slider{
+	max-width: 800px;
+}
+label{
+	cursor: pointer;
+}
+
+.wraper input{
+	display: none;
+}
+
+#switch1:checked ~ #slides .cards {
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .cards {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .cards {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .cards {
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .cards {
+	margin-left: -400%;
+}
+
+#switch1:checked ~ #slides .text {
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .text {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .text {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .text {
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .text {
+	margin-left: -400%;
+}
+
+#active label{
+   border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{
+	margin-top: -40px ;
+   margin-left: 76%;
+}
+
+#active label:hover{
+   background-color: azure;
+	border-color: #777 !important;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#slides .cards, .text {
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+@media screen and (max-width:700px){
+
+
+   h4{
+   font: 1em sans-serif;
+   color: bisque;
+   margin-top: 60px;
+}
+
+#active{
+	margin-top: -70px ;
+   margin-left: 40%;
+}
+
+}
