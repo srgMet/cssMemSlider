@@ -101,6 +101,7 @@ label{
 }
 
 #active label:hover{
+   background-color: azure;
 	border-color: #777 !important;
 }
 
